@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Виды списков</title>
+    <style>
+        /* Общие стили для разделителей после заголовков */
+        h2 {
+            display: flex;
+            align-items: center;
+        }
+        
+        .hr-red {
+            height: 3px; /* Толщина линии 3 пикселя */
+            background-color: red;
+            width: 100%;
+            margin-left: 15px;
+            border: none;
+        }
+        
+        /* Стилизация первого списка */
+        .list-food ol {
+            list-style-type: upper-roman; /* I, II... для верхнего уровня */
+            padding-left: 20px;
+        }
+        .list-food ul {
+            padding-left: 40px;
+        }
+        .list-food li {
+            margin-bottom: 5px;
+        }
+        
+        /* Стилизация второго списка */
+        .list-devices ol {
+            list-style-type: upper-roman; /* I, II... */
+            padding-left: 20px;
+        }
+        .list-devices ul {
+            padding-left: 40px;
+        }
+        .list-devices li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Блок 2: Продукты питания -->
+<h2 style="color: red; font-size: 4em;">Продукты питания<div class="hr-red"></div></h2>
+
+<ol class="list-food">
+    <li>
+        Фрукты
+        <ul>
+            <li>Яблоки
+                <ol type="a">
+                    <li>Зеленые</li>
+                    <li>Красные</li>
+                </ol>
+            </li>
+            <li>Апельсины</li>
+            <li>Груши
+                <ul>
+                    <li style="list-style-type:
